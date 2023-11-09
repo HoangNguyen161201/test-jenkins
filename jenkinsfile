@@ -1,0 +1,12 @@
+pipeline{
+    agent any
+    stages{
+        stage("clone github source"){
+            steps{
+                echo "========executing A========"
+                git branch: 'main', url: 'https://github.com/HoangNguyen161201/test-jenkins.git'
+            }
+           
+        }
+    }
+}
